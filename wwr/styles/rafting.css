@@ -2,9 +2,9 @@
 
 :root {
     --primary-color: #2EC0F9;
-    --secondary-color: #D0FFD6;
+    --secondary-color: #a3888e;
     --accent1-color: #FEC0AA;
-    --accent2-color: #D6A2AD;
+    --accent2-color: #D0FFD6;
 
     --heading-font: Poppins;
     --paragraph-font: Poppins;
@@ -14,35 +14,71 @@
     --nav-hover-link-color: #ffaaaa;
     --nav-hover-background-color: #3a3a3a;
 }
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins';
+    font-family: var(--heading-font);
     color: var(--primary-color);
-  }
+}
+
 p {
-    color: var(--text-color);
-  }
-body {
-    color: var(--text-color);
-    background-color: var(--background-color);
     font-family: var(--paragraph-font);
-  }
+    color: var(--secondary-color);
+}
+
 .sociallinks a {
     text-decoration: none;
-  }
-footer .sociallinks img {
+}
+
+body {
+    width: 80%; /* Set the width to 80% of the viewport */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.hero {
+    position: relative;
+    background-size: cover; 
+    background-position: center;
+    text-align: center; 
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+}
+article img {
+    float: right;
+    width: 40%;
+    margin-left: 20px;    
+}
+
+article {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.sociallinks img {
     width: 24px;
     height: 24px;
 }
-.hero img {
-    width: 100%;
-    display: block;
-}
+
 .hero h1 {
+    margin-top: 10px; 
+    letter-spacing: 2px; 
+    background-color: #3a3a3ac7; 
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%; 
+    text-align: center; 
+}
+
+.hero article {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--accent1-color);
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%); 
+    width: 90%; 
+    background-color: var(--nav-hover-background-color); 
 }
