@@ -24,7 +24,25 @@ p {
 body {
     color: var(--text-color);
     background-color: var(--background-color);
+    font-family: var(--paragraph-font);
   }
 .sociallinks a {
     text-decoration: none;
   }
+footer .sociallinks img {
+    width: 24px;
+    height: 24px;
+}
+.hero img {
+    width: 100%;
+    display: block;
+}
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent1-color);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
