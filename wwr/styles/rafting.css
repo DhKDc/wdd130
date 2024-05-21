@@ -30,8 +30,8 @@ p {
 }
 
 body {
-    width: 80%; /* Set the width to 80% of the viewport */
-    margin: 0 auto; /* Center the content horizontally */
+    width: 80%;
+    margin: 0 auto; 
 }
 
 .hero {
