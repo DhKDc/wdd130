@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
 :root {
-    --primary-color: #2EC0F9;
-    --secondary-color: #a3888e;
-    --accent1-color: #FEC0AA;
-    --accent2-color: #D0FFD6;
+    --primary-color: #4F86C6;
+    --secondary-color: #333;
+    --accent1-color: #fff;
+    --accent2-color: #e8f0fe;
 
-    --heading-font: Poppins;
-    --paragraph-font: Poppins;
+    --heading-font: 'Poppins', sans-serif; 
+    --paragraph-font: 'Poppins', sans-serif;
 
-    --nav-background-color: #121212;
-    --nav-link-color: #fec0aa;
-    --nav-hover-link-color: #ffaaaa;
-    --nav-hover-background-color: #3a3a3a;
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: #fff;              
+    --nav-hover-link-color: var(--primary-color); 
+    --nav-hover-background-color: var(--accent2-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +32,8 @@ p {
 body {
     width: 80%;
     margin: 0 auto; 
+    background-color: var(--accent1-color); /* White background */
+    color: var(--secondary-color);           /* Dark gray text */
 }
 
 .hero {
@@ -39,24 +41,38 @@ body {
     background-size: cover; 
     background-position: center;
     text-align: center; 
+    max-height: 50vh;
+    overflow: hidden;
 }
 
 .hero > img {
     display: block;
     width: 100%;
 }
+
+article {
+    background-color: var(--accent1-color); /* White */
+    color: var(--secondary-color); /* Dark gray */
+    opacity: 1;
+}
+
 article img {
     float: right;
     width: 40%;
-    margin-left: 20px;    
+    margin-left: 20px;   
 }
 
-article {
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
-    opacity: 0.8;
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
 }
 
+.sociallinks {
+    display: flex;
+    gap: 10px;
+}
 .sociallinks img {
     width: 24px;
     height: 24px;
@@ -79,6 +95,69 @@ article {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    width: 90%; 
+    width: auto;
+    padding: 20px; 
     background-color: var(--nav-hover-background-color); 
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    padding: 10px;
+    font-family: var(--paragraph-font);
+} 
+  
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+header img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px; 
+}
+
+figure {
+    margin: 0;
+    display: flex; /* Use flexbox to center image and caption */
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center horizontally within the figure */
+}
+
+figure img {
+    width: auto;  /* Let the width adjust */
+    height: 100px; /* Set a fixed height (adjust as needed) */
+    object-fit: cover; 
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em; 
+    margin-top: 5px; 
+    font-family: var(--paragraph-font); /* Use the same font as the rest of the page */
 }
