@@ -225,11 +225,15 @@ figcaption {
     padding: 10px;
     margin-bottom: 15px;
 }
-
-.staff h1 {
+main h1 {
     font-size: 3em;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
+}
+.staff h2 {
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .staff-row {
@@ -297,4 +301,9 @@ figcaption {
 .input-field {
     flex: 1; 
     margin-right: 10px;
+}
+.contact-info iframe {
+    width: 95%;
+    height: 300px;
+    border: #333;
 }
