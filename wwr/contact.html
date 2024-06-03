@@ -19,56 +19,81 @@
         </nav>
     </header>
     <main>
-        <section class="contact-info">
-          <h2>Contact Information</h2>
-          <p>Address: 123 Main Street, Cachapoal, O'Higgins Region, Chile</p>
-          <p>Phone: +56 9 1234 5678</p>
-          <p>Email: info@dryoarrafting.com</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3296.2079348015927!2d-71.4325503398198!3d-34.29424481157794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1717373698177!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="team">
+        <section class="staff">
             <h2>Meet Our Team</h2>
-            <figure>
-              <img src="images/employee1.jpg" alt="Employee 1">
-              <figcaption>Sarah Jones - Head River Guide</figcaption>
-            </figure>
-            <figure>
-              <img src="images/employee2.jpg" alt="Employee 2">
-              <figcaption>Michael Lee - Lead Safety Officer</figcaption>
-            </figure>
-            <figure>
-              <img src="images/employee3.jpg" alt="Employee 3">
-              <figcaption>Olivia Rodriguez - Customer Service Manager</figcaption>
-            </figure>
-          </section>
-          <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post"> 
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+            <div class="staff-row">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Jones">
+                    <figcaption>
+                        <div class="staff-name">Sarah Jones</div>
+                        <div class="staff-position">Head River Guide</div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Michael Lee">
+                    <figcaption>
+                        <div class="staff-name">Michael Lee</div>
+                        <div class="staff-position">Lead Safety Officer</div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Olivia Rodriguez">
+                    <figcaption>
+                        <div class="staff-name">Olivia Rodriguez</div>
+                        <div class="staff-position">Customer Service Manager</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class="contact-grid">
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post"> 
+                    <div class="input-row">
+                        <div class="input-field">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+    
+                    <fieldset>
+                        <legend>Purpose of Message:</legend>
+                        <div class="radio-buttons">
+                            <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
+                            <label for="general">General Inquiry</label>
+                    
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                    
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+    
+                    <button type="submit">Send Message</button>
+                    </form>
+            </section>
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Address: 123 Main Street, Cachapoal, O'Higgins Region, Chile</p>
+                <p>Phone: +56 9 1234 5678</p>
+                <p>Email: info@dryoarrafting.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3296.2079348015927!2d-71.4325503398198!3d-34.29424481157794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1717373698177!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <fieldset>
-                    <legend>Purpose of Message:</legend>
-                    <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
-                    <label for="general">General Inquiry</label><br>
-
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label><br>
-
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-                </fieldset><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-
-                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
-
-                <button type="submit">Send Message</button>
     </main>
     <footer>
         <p>Copyright &copy; 2024 Rafting Site - Daniel Toledo</p>
