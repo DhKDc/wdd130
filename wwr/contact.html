@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dry Oar Rafting</title>
+    <meta name="author" content="Daniel Toledo">
+    <meta name="description" content="Contact page for the water rafting compaty Dry Oar">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <p>Address: 123 Main Street, Cachapoal, O'Higgins Region, Chile</p>
+          <p>Phone: +56 9 1234 5678</p>
+          <p>Email: info@dryoarrafting.com</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3296.2079348015927!2d-71.4325503398198!3d-34.29424481157794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1717373698177!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <figure>
+              <img src="images/employee1.jpg" alt="Employee 1">
+              <figcaption>Sarah Jones - Head River Guide</figcaption>
+            </figure>
+            <figure>
+              <img src="images/employee2.jpg" alt="Employee 2">
+              <figcaption>Michael Lee - Lead Safety Officer</figcaption>
+            </figure>
+            <figure>
+              <img src="images/employee3.jpg" alt="Employee 3">
+              <figcaption>Olivia Rodriguez - Customer Service Manager</figcaption>
+            </figure>
+          </section>
+          <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post"> 
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
+                    <label for="general">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
+
+                <button type="submit">Send Message</button>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 Rafting Site - Daniel Toledo</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/x.svg" alt="X"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
