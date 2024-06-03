@@ -226,17 +226,19 @@ figcaption {
     margin-bottom: 15px;
 }
 
-.staff h2 {
-    font-size: 2em;
+.staff h1 {
+    font-size: 3em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .staff-row {
-    padding: 50px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 50px;
 }
 
 .staff-row figure {
@@ -257,12 +259,12 @@ figcaption {
 }
 
 .staff-name {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .staff-position {
-    font-size: 1em; 
+    font-size: 1.5em; 
 }
 
 .contact-grid {
