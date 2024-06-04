@@ -307,3 +307,89 @@ main h1 {
     height: 300px;
     border: #333;
 }
+.trip-row {
+    display: grid; /* Use CSS Grid for the layout */
+    grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
+    gap: 20px; /* Add some space between the grid items */
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.trip-row figure {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.trip-row figure:hover {
+    transform: scale(1.05);
+}
+.cta {
+    background-color: var(--accent2-color); /* Lighter background color for better contrast */
+    color: var(--secondary-color); /* Darker text color for better readability */
+    padding: 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.cta-button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+.trip-table {
+    width: 100%;
+    background-color: var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    padding-bottom: 30px;
+}
+
+.trip-table h2 {
+    text-align: center; /* Center the title */
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.trip-table table {
+    margin: 0 auto; /* Center the table */
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: var(--accent1-color);
+}
