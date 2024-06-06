@@ -13,6 +13,8 @@
     --nav-link-color: #fff;              
     --nav-hover-link-color: var(--primary-color); 
     --nav-hover-background-color: var(--accent2-color);
+    --text-color-light: #fff;
+    --text-color-dark: #48515a;
 }
 
 body {
@@ -188,7 +190,6 @@ figcaption {
     border-right: 2px solid var(--secondary-color);
     padding-right: 20px;
 }
-
 .contact-form label {
     display: block;
     margin-bottom: 5px;
@@ -213,7 +214,8 @@ figcaption {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .contact-form button[type="submit"]:hover {
@@ -280,7 +282,10 @@ main h1 {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
 }
-
+.contact-grid h2 {
+    color: #333;
+    size: 1.5em;
+}
 .radio-buttons {
     display: flex;
     align-items: center; 
@@ -308,9 +313,9 @@ main h1 {
     border: #333;
 }
 .trip-row {
-    display: grid; /* Use CSS Grid for the layout */
-    grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
-    gap: 20px; /* Add some space between the grid items */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     background-color: #f2f2f2;
     padding: 20px;
 }
@@ -322,12 +327,16 @@ main h1 {
     transition: transform 0.3s ease;
 }
 
+.trip-row h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .trip-row figure:hover {
     transform: scale(1.05);
 }
 .cta {
-    background-color: var(--accent2-color); /* Lighter background color for better contrast */
-    color: var(--secondary-color); /* Darker text color for better readability */
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
     padding: 20px;
     text-align: center;
 }
@@ -349,6 +358,7 @@ main h1 {
     margin: 0 auto;
     padding: 15px 30px;
     font-size: 1.2em;
+    font-weight: bold;
     background-color: var(--primary-color);
     color: var(--accent1-color);
     text-decoration: none;
@@ -365,18 +375,18 @@ main h1 {
     background-color: var(--accent2-color);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content */
+    align-items: center;
     padding-bottom: 30px;
 }
 
 .trip-table h2 {
-    text-align: center; /* Center the title */
+    text-align: center; 
     text-transform: uppercase;
     font-size: 2em;
 }
 
 .trip-table table {
-    margin: 0 auto; /* Center the table */
+    margin: 0 auto; 
 }
 
 .trip-table th, .trip-table td {
@@ -386,10 +396,138 @@ main h1 {
 }
 
 .trip-table th {
-    background-color: var(--primary-color);
+    background-color: var(--text-color-dark);
     color: var(--accent1-color);
 }
 
 .trip-table tr:nth-child(even) {
     background-color: var(--accent1-color);
+}
+.homepage-banner {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden; 
+    text-align: center;
+}
+.homepage-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.homepage-banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-light); 
+    font-size: 2em; 
+    background-color: rgba(0, 0, 20, 0.5); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+}
+
+#newsletter {
+    background-color: var(--accent2-color);
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#newsletter h2 {
+    text-align: center;
+    margin-bottom:0px;
+}
+
+#newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#newsletter label,
+#newsletter input {
+    width: 95%;
+    padding:10px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+
+#newsletter input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.adventure-cta {
+    background-color: rgba(31, 51, 78, 0.767);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.adventure-cta h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.adventure-cta p {
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.adventure-cta .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.adventure-cta .cta-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-item {
+    position: relative;
+    background-color: var(--accent2-color);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.grid-item img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+.grid-item h3,
+.grid-item p {
+    color: var(--text-color-dark);
+    background-color: rgba(255, 255, 255, 0.2); 
 }
